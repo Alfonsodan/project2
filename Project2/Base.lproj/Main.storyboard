@@ -17,17 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cn-SI-QGD">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cn-SI-QGD">
                                 <rect key="frame" x="200" y="230" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="82r-WC-7x7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqp-Qw-Iji">
                                 <rect key="frame" x="200" y="100" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cOQ-9b-Qu1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbt-Ot-70I">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbt-Ot-70I">
                                 <rect key="frame" x="200" y="360" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKl-QV-Bbx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -41,11 +50,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="taB-gD-NA0"/>
-                    <connections>
-                        <outlet property="Button1" destination="yqp-Qw-Iji" id="bOD-Hy-bnr"/>
-                        <outlet property="Button2" destination="9Cn-SI-QGD" id="asN-qX-Npi"/>
-                        <outlet property="Button3" destination="gbt-Ot-70I" id="Fws-vh-dg3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
